@@ -13,27 +13,19 @@ import net.minecraft.creativetab.CreativeTabs;
 
 public class BlockNanoFrame extends Block{
 
-
-
 	public BlockNanoFrame(int id, Material material) {
 		super(id, material);
 		this.setUnlocalizedName(Strings.NANOFRAME_NAME);
 		this.setCreativeTab(CreativeTabs.tabBlock);
-		
-		
+
 	}
-	
+
 	@SideOnly(Side.CLIENT)
     @Override
             public void registerIcons(IconRegister par1iconRegister) {
-                    this.blockIcon = par1iconRegister.registerIcon(Reference.MOD_ID + ":" + this.getUnlocalizedName().substring(this.getUnlocalizedName().indexOf(".") + 1) );
+                    this.blockIcon = par1iconRegister.registerIcon(ModularNanoTechnology:BlockNanoFrameTexture.png);
 			
                    
         }
-	
-	
-	
+
 }
-
-	
-
