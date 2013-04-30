@@ -12,7 +12,7 @@ public class ModBlocks {
 	public static Block nanoframe;	
 	
 	public static void init(){
-		nanoframe = new BlockNanoFrame(BlockID.NANOFRAME, Material.rock).setUnlocalizedName("nanoframe");
+		nanoframe = new BlockNanoFrame(BlockID.NANOFRAME, Material.rock).setUnlocalizedName("nanoframe").setMaxStackSize(64).setResistance(200).setHardness(200);
 		
 		GameRegistry.registerBlock(nanoframe, Strings.NANOFRAME_NAME);
 		
