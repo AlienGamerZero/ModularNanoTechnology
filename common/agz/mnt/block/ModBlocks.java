@@ -15,7 +15,7 @@ public class ModBlocks {
 		nanoframe = new BlockNanoFrame(BlockID.NANOFRAME, Material.rock).setUnlocalizedName("nanoframe").setMaxStackSize(64).setResistance(200).setHardness(200);
 		
 		GameRegistry.registerBlock(nanoframe, Strings.NANOFRAME_NAME);
-		//you don't see this?
+		//you don't see this??
 		LanguageRegistry.addName(nanoframe, Strings.NANOFRAME_NAME);
 	}
 	
