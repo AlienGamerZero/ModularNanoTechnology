@@ -12,10 +12,10 @@ public class ModBlocks {
 	public static Block nanoframe;	
 	
 	public static void init(){
-		nanoframe = new BlockNanoFrame(BlockID.NANOFRAME, Material.rock).setUnlocalizedName("nanoframe").setMaxStackSize(64).setResistance(200).setHardness(200);
+		nanoframe = new BlockNanoFrame(BlockID.NANOFRAME, Material.rock, Strings.NANOFRAME_NAME, CreativeTabs.tabBlock, 64, 200, 200);
 		
 		GameRegistry.registerBlock(nanoframe, Strings.NANOFRAME_NAME);
-		//you don't see this????
+
 		LanguageRegistry.addName(nanoframe, Strings.NANOFRAME_NAME);
 	}
 	

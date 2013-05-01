@@ -13,10 +13,15 @@ import net.minecraft.creativetab.CreativeTabs;
 
 public class BlockNanoFrame extends Block{
 
-	public BlockNanoFrame(int id, Material material) {
+	public BlockNanoFrame(int id, Material material, String Strings.NANOFRAME_NAME, CreativeTabs tab, int stack, int res, int hard) {
 		super(id, material);
+		this.setMaterial(material)
 		this.setUnlocalizedName(Strings.NANOFRAME_NAME);
-		this.setCreativeTab(CreativeTabs.tabBlock);
+		this.setCreativeTab(tab);
+		this.setMaxStackSize(stack);
+		this.setResistance(res);
+		this.setHardness(har);
+		
 
 	}
 
