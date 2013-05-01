@@ -1,0 +1,20 @@
+package agz.mnt.item;
+
+import cpw.mods.fml.common.registry.LanguageRegistry;
+import agz.mnt.lib.ItemID;
+import agz.mnt.lib.Strings;
+import net.minecraft.item.Item;
+
+public class ModItems {
+	
+	public static Item NanoManipulationDevice;
+	
+	public static void init(){
+		
+		NanoManipulationDevice = new ItemNanoManipulationDevice(ItemID.ID_NANOMANIPULATIONDEVICE_DEFAULT);
+		
+		LanguageRegistry.addName(NanoManipulationDevice, Strings.NANOMANIPULATIONDEVICE_NAME);
+		
+	}
+	
+}
