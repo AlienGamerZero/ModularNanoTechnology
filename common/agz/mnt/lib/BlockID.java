@@ -2,10 +2,12 @@ package agz.mnt.lib;
 
 public class BlockID {
 	
-	public static int NANOFRAME_DEFAULT = 4000;
+	//BlockIDs: 4000-4010
+	
+	public static int ID_NANOFRAME_DEFAULT = 4000;
 	
 	
-	public static int NANOFRAME;
+	public static int ID_NANOFRAME;
 	
 	
 }

@@ -2,6 +2,7 @@ package agz.mnt;
 
 import agz.mnt.block.ModBlocks;
 import agz.mnt.core.proxy.CommonProxy;
+import agz.mnt.item.ModItems;
 import agz.mnt.lib.Reference;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.Init;
@@ -29,6 +30,7 @@ public class ModularNanoTechnology {
     @PreInit
     public void preInit(FMLPreInitializationEvent event) {
     	ModBlocks.init();
+    	ModItems.init();
     }
     
     @Init
