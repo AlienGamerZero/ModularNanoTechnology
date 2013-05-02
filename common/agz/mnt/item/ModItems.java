@@ -10,8 +10,8 @@ public class ModItems {
 	
 	
 	public static Item NanoManipulationDevice;
-	public static Item ItemMNTLogo;
-	public static final ItemStack ItemTabMNTLogo = new ItemStack(ItemMNTLogo, 1);
+	public static Item MNTLogo;
+	public ItemStack ItemMNTLogo = new ItemStack(MNTLogo, 1);
 	
 	public static void init(){
 		
@@ -23,15 +23,8 @@ public class ModItems {
 		
 
 	
-		
-		
-
-		
-		
-		//Creative Tab Logo Item
-		//MNTLogo = new ItemMNTLogo(ItemID.ID_MNTLogo);
-		ItemMNTLogo = new ItemMNTLogo(ItemID.ID_MNTLogo);
-		LanguageRegistry.addName(ItemMNTLogo, Textures.TEXTURE_ITEM_NANOMANIPULATIONDEVICE);
+		MNTLogo = new ItemMNTLogo(ItemID.ID_MNTLogo);
+		LanguageRegistry.addName(MNTLogo, Textures.TEXTURE_MNT_LOGO);
 	}
 	
 	

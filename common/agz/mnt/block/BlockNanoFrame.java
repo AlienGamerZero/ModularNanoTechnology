@@ -3,7 +3,6 @@ package agz.mnt.block;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import agz.mnt.ModularNanoTechnology;
-import agz.mnt.creativetab.CreativeTabMNT;
 import agz.mnt.lib.Reference;
 import agz.mnt.lib.Strings;
 import agz.mnt.lib.Textures;

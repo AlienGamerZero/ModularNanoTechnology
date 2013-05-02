@@ -1,9 +1,10 @@
 package agz.mnt;
 
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import agz.mnt.block.ModBlocks;
 import agz.mnt.core.proxy.CommonProxy;
-import agz.mnt.creativetab.CreativeTabMNT;
 import agz.mnt.item.ModItems;
 import agz.mnt.lib.Reference;
 import cpw.mods.fml.common.Mod;
@@ -16,14 +17,22 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
+import cpw.mods.fml.common.registry.LanguageRegistry;
 
 @Mod( modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
 @NetworkMod(clientSideRequired = true, serverSideRequired = true)
 public class ModularNanoTechnology {
 
-	public static CreativeTabMNT MNTtab = new CreativeTabMNT();
-		
 	
+	//Adds custom creative tab. Do: setCreativeTab(ModularNanoTechnology.MNTtab); to use.
+	public static CreativeTabs MNTtab = new CreativeTabs("Modular Nano Technology") {
+        public ItemStack getIconItemStack() {
+                return new ItemStack(ModItems.MNTLogo, 1, 0);
+        }
+};
+	
+
+
     @Instance("ModularNanoTechnology")
     public static ModularNanoTechnology instance;
     
@@ -40,6 +49,9 @@ public class ModularNanoTechnology {
     @Init
     public void load(FMLInitializationEvent event) {
             proxy.registerRenderers();
+            
+            //Sets Creativetab name
+            LanguageRegistry.instance().addStringLocalization("itemGroup.Modular Nano Technology", "en_US", "Modular Nano Technology");
     }
     
     @PostInit
