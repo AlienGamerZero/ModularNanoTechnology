@@ -2,6 +2,7 @@ package agz.mnt.item;
 
 import cpw.mods.fml.common.registry.LanguageRegistry;
 import agz.mnt.lib.ItemID;
+import agz.mnt.lib.Strings;
 import agz.mnt.lib.Textures;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -17,14 +18,16 @@ public class ModItems {
 		
 		NanoManipulationDevice = new ItemNanoManipulationDevice(ItemID.ID_NANOMANIPULATIONDEVICE_DEFAULT);
 		
+		
+		
 		LanguageRegistry.addName(NanoManipulationDevice, Textures.TEXTURE_ITEM_NANOMANIPULATIONDEVICE);
 		
 		
 		
 
-	
+		//For creative tab
 		MNTLogo = new ItemMNTLogo(ItemID.ID_MNTLogo);
-		LanguageRegistry.addName(MNTLogo, Textures.TEXTURE_MNT_LOGO);
+		LanguageRegistry.addName(MNTLogo, Strings.MNTLogo_NAME);
 	}
 	
 	
