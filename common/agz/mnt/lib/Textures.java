@@ -3,11 +3,13 @@ package agz.mnt.lib;
 public class Textures {
 
 	
-	//Base texture folders
-	public static final String BLOCK_LOCATION = "/mods/MNT/textures/blocks/";
 	
 	
-	//Models
-	public static final String BLOCK_NANOFRAME = BLOCK_LOCATION + "BlockNanoFrameTexture.png";
 	
+	//Texture names
+	public static final String TEXTURE_BLOCK_NANOFRAME = "BlockNanoFrameTexture";
+	public static final String TEXTURE_ITEM_NANOMANIPULATIONDEVICE = "ItemNanoManipulationDevice";
+	
+	//Creative Tab Icon / Modular Nano Technology Logo
+	public static final String TEXTURE_MNT_LOGO = "MNTanimatedLogoFINAL";
 }

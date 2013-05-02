@@ -1,7 +1,9 @@
 package agz.mnt;
 
+import net.minecraft.creativetab.CreativeTabs;
 import agz.mnt.block.ModBlocks;
 import agz.mnt.core.proxy.CommonProxy;
+import agz.mnt.creativetab.CreativeTabMNT;
 import agz.mnt.item.ModItems;
 import agz.mnt.lib.Reference;
 import cpw.mods.fml.common.Mod;
@@ -19,11 +21,13 @@ import cpw.mods.fml.common.network.NetworkMod;
 @NetworkMod(clientSideRequired = true, serverSideRequired = true)
 public class ModularNanoTechnology {
 
-	// The instance of your mod that Forge uses.
+	public static CreativeTabMNT MNTtab = new CreativeTabMNT();
+		
+	
     @Instance("ModularNanoTechnology")
     public static ModularNanoTechnology instance;
     
-    // Says where the client and server 'proxy' code is loaded.
+    
     @SidedProxy(clientSide=Reference.CLIENT_PROXY_CLASS, serverSide=Reference.SERVER_PROXY_CLASS)
     public static CommonProxy proxy;
     
