@@ -20,7 +20,7 @@ public class ModItems {
 		
 		
 		
-		LanguageRegistry.addName(NanoManipulationDevice, Textures.TEXTURE_ITEM_NANOMANIPULATIONDEVICE);
+		LanguageRegistry.addName(NanoManipulationDevice, Strings.NANOMANIPULATIONDEVICE_NAME);
 		
 		
 		
