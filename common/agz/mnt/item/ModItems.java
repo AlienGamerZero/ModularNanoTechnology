@@ -3,7 +3,6 @@ package agz.mnt.item;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 import agz.mnt.lib.ItemID;
 import agz.mnt.lib.Strings;
-import agz.mnt.lib.Textures;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
@@ -16,7 +15,7 @@ public class ModItems {
 	
 	public static void init(){
 		
-		NanoManipulationDevice = new ItemNanoManipulationDevice(ItemID.ID_NANOMANIPULATIONDEVICE_DEFAULT);
+		NanoManipulationDevice = new ItemNanoManipulationDevice(ItemID.ID_NANOMANIPULATIONDEVICE_DEFAULT, 0, null, null);
 		
 		
 		
